@@ -1,0 +1,108 @@
+[
+    {
+        "title": "Shampoo Sedal x190 acido hialuronico",
+        "description": "Shampoo Sedal x190 acido hialuronico",
+        "price": 300,
+        "thumbnails": [
+            "/img/1679448871032-2175.jpg",
+            "/img/1679448871035-coca.jpg"
+        ],
+        "code": "abc129",
+        "stock": 30,
+        "id": 6
+    },
+    {
+        "title": "Jabon Rexona active men",
+        "description": "Jabon Rexona active men",
+        "price": 200,
+        "thumbnails": [
+            "http://localhost:8080/img/1679448871032-2175.jpg",
+            "http://localhost:8080/img/1679448871035-coca.jpg"
+        ],
+        "code": "abc130",
+        "stock": 25,
+        "id": 7
+    },
+    {
+        "title": "Jabon Rexona orchid",
+        "description": "Jabon Rexona orchid",
+        "price": 200,
+        "thumbnails": [
+            "http://localhost:8080/img/1679448871032-2175.jpg",
+            "http://localhost:8080/img/1679448871035-coca.jpg"
+        ],
+        "code": "abc131",
+        "stock": 30,
+        "id": 8
+    },
+    {
+        "title": "Aceite Cocinero x1.5lts",
+        "description": "Aceite Cocinero x1.5lts",
+        "price": 950,
+        "thumbnails": [
+            "http://localhost:8080/img/1679448871032-2175.jpg",
+            "http://localhost:8080/img/1679448871035-coca.jpg"
+        ],
+        "code": "abc132",
+        "stock": 25,
+        "id": 9
+    },
+    {
+        "title": "Aceite cocinero x900ml",
+        "description": "Aceite cocinero x900ml",
+        "price": 450,
+        "thumbnails": [
+            "http://localhost:8080/img/1679448871032-2175.jpg",
+            "http://localhost:8080/img/1679448871035-coca.jpg"
+        ],
+        "code": "abc133",
+        "stock": 30,
+        "id": 10
+    },
+    {
+        "title": "fdjsk",
+        "description": "jfdsk",
+        "price": 456,
+        "code": "fs",
+        "stock": 456,
+        "category": "fdssd",
+        "thumbnails": [],
+        "id": 11,
+        "satus": true
+    },
+    {
+        "title": "dasjk",
+        "description": "ankd",
+        "price": 156,
+        "code": "djskf",
+        "stock": 16,
+        "category": "bhsd",
+        "thumbnails": [],
+        "id": 12,
+        "satus": true
+    },
+    {
+        "title": "fsjkd",
+        "description": "njf",
+        "price": 56,
+        "code": "dnjk",
+        "stock": 156,
+        "category": "sjdkv",
+        "thumbnails": [],
+        "id": 13,
+        "satus": true
+    },
+    {
+        "title": "arveja vigente",
+        "description": "arveja vigente",
+        "price": 56,
+        "code": "ar526",
+        "stock": 56,
+        "category": "comestibles",
+        "thumbnails": [
+            "http://localhost:8080/img/arvejaVigente.jpg"
+        ],
+        "id": 14,
+        "satus": true
+    }
+]

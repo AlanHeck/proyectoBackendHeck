@@ -1,0 +1,47 @@
+<div>
+    <h1>Bienvenido {{user.name}}</h1>
+    <p>rol:{{user.rol}}</p>
+
+    <button class="logout-button">Cerrar Session</button>
+    <p {{#compare user.rol '==' 'admin' }} disabled {{/compare}}>Carrito Id: {{user.cart}}</p>
+    <button class="cart-button" {{#compare user.rol '==' 'admin' }} disabled {{/compare}} id={{user.cart}}>Ver
+        carrito</button>
+    <a href="/profile"><button>Mi perfil</button></a>
+    {{#compare user.rol '!==' 'user'}}
+    <a href="/realTimeProducts"><button>Administrar productos</button></a>
+    {{/compare}}
+
+    <h2>Productos</h2>
+    <div class="products-conteiner">
+        {{#each products}}
+        <div class="product-conteiner">
+            <div class="product">
+                {{#each this.thumbnails}}
+                <img src={{this}} alt={{this.title}}>
+                {{/each}}
+                <p>{{this.category}}</p>
+                <p>{{this.title}}</p>
+                <p>{{this.code}}</p>
+                <p>Precio:${{this.price}}</p>
+                <p>stock:{{this.stock}}</p>
+            </div>
+
+            <button class="product-button" {{#compare ../user.rol '==' 'admin' }} disabled {{/compare}}{{#compare
+                this.stock '==' 0}} disabled {{/compare}}{{#compare ../user.email '==' this.owner}} disabled
+                {{/compare}} id="{{_id}}">Agregar al carrito</button>
+            <a href="/products/{{_id}}"><button class="detalle-button">Ver detalle</button></a>
+        </div>
+        {{/each}}
+    </div>
+    <div class="pages-conteiner">
+        {{#if hasPrevPage}}
+        <a prevPage='{{prevPage}}' id="prevLink"><button>Anterior</button></a>
+        {{/if}}
+        <p class="pageNumber">{{page}}</p>
+        {{#if hasNextPage}}
+        <a nextPage="{{nextPage}}" id="nextLink"><button>Siguiente</button></a>
+        {{/if}}
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/js/products.js"></script>

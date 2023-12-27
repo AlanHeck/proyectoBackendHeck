@@ -1,0 +1,52 @@
+<div>
+    <h1>Agregar un producto</h1>
+    <div>
+        <form id='addProductForm' {{!--action="/api/products" method="post" --}} enctype="multipart/form-data">
+            <label for="title">Nombre del producto</label>
+            <input type="text" name="title" id="title" />
+            <br />
+            <label for="description">Descripción</label>
+            <input type="text" name="description" id="description" />
+            <br />
+            <label for="price">Precio</label>
+            <input type="number" name="price" id="price" />
+            <br />
+            <label for="code">Código</label>
+            <input type="text" name="code" id="code" />
+            <br />
+            <label for="stock">stock</label>
+            <input type="number" name="stock" id="stock" />
+            <br />
+            <label for="category">Categoría</label>
+            <input type="text" name="category" id="category" />
+            <br />
+            <label for="thumbnails">Imagen</label>
+            <input type="file" name="thumbnails" id="thumbnails" accept="image/*" multiple />
+            <br />
+            <button type="submit">Cargar </button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+    <div id="errorCargaProducto"></div>
+
+    <h2>Eliminar un producto</h2>
+    <div>
+        <form id='deleteProductForm'>
+            <label for="pid">id del producto</label>
+            <input type="text" name="pid" id="pid" required />
+            <br />
+            <button type="submit">Cargar </button>
+            <button type="reset">Reset</button>
+
+        </form>
+    </div>
+
+
+    <br />
+    <h2>Lista de Productos</h2>
+    <div id="productsList"></div>
+</div>
+{{!--
+<script src="/socket.io/socket.io.js"></script> --}}
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/js/index.js"></script>
